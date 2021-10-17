@@ -18,7 +18,7 @@ int main(int argc,char *argv[]) {
         printf("Source file doesn't exist");
         return 1;
        }
-       FILE *targetfile = fopen(argv[1],"w");
+       FILE *targetfile = fopen(argv[2],"w");
        if (targetfile) 
        {
          char c;
