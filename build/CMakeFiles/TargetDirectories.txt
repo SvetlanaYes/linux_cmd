@@ -1,0 +1,3 @@
+/home/svetlana/linux_cmd/build/CMakeFiles/rebuild_cache.dir
+/home/svetlana/linux_cmd/build/CMakeFiles/linux_cmd.dir
+/home/svetlana/linux_cmd/build/CMakeFiles/edit_cache.dir
