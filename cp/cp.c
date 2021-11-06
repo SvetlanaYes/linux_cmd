@@ -31,11 +31,6 @@ int main(int argc,char *argv[]) {
           fclose(targetfile);
           printf("Everything is correct , %s is coppied to %s",argv[1],argv[2]);
        }
-      
-     
-     
-     
    }
-   
   return 0;
 }
