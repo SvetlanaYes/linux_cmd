@@ -25,6 +25,6 @@ int main(int argc,char *argv[]) {
        }
           fclose(sourcefile);
           fclose(targetfile);
-   }
+   
   return 0;
 }

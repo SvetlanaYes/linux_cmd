@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/linux_cmd.dir/cd/cd.c.o CMakeFiles/linux_cmd.dir/cp/cp.c.o CMakeFiles/linux_cmd.dir/rm/rm.c.o CMakeFiles/linux_cmd.dir/mv/mv.c.o CMakeFiles/linux_cmd.dir/ls/ls.c.o -o linux_cmd 

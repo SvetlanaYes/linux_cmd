@@ -210,6 +210,24 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+cd_BINARY_DIR:STATIC=/home/svetlana/linux_cmd/build/cd
+
+//Value Computed by CMake
+cd_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+cd_SOURCE_DIR:STATIC=/home/svetlana/linux_cmd/cd
+
+//Value Computed by CMake
+cp_BINARY_DIR:STATIC=/home/svetlana/linux_cmd/build/cp
+
+//Value Computed by CMake
+cp_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+cp_SOURCE_DIR:STATIC=/home/svetlana/linux_cmd/cp
+
+//Value Computed by CMake
 linux_cmd_BINARY_DIR:STATIC=/home/svetlana/linux_cmd/build
 
 //Value Computed by CMake
@@ -217,6 +235,33 @@ linux_cmd_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 linux_cmd_SOURCE_DIR:STATIC=/home/svetlana/linux_cmd
+
+//Value Computed by CMake
+ls_BINARY_DIR:STATIC=/home/svetlana/linux_cmd/build/ls
+
+//Value Computed by CMake
+ls_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ls_SOURCE_DIR:STATIC=/home/svetlana/linux_cmd/ls
+
+//Value Computed by CMake
+mv_BINARY_DIR:STATIC=/home/svetlana/linux_cmd/build/mv
+
+//Value Computed by CMake
+mv_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mv_SOURCE_DIR:STATIC=/home/svetlana/linux_cmd/mv
+
+//Value Computed by CMake
+rm_BINARY_DIR:STATIC=/home/svetlana/linux_cmd/build/rm
+
+//Value Computed by CMake
+rm_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+rm_SOURCE_DIR:STATIC=/home/svetlana/linux_cmd/rm
 
 
 ########################
@@ -325,7 +370,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

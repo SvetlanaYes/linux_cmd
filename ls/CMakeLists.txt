@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(linux_cmd)
+project(ls)
 
-add_executable(linux_cmd ls/ls.c)
+add_executable(ls ls.c)
 
