@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(linux_cmd)
+project(cp)
 
-add_executable(linux_cmd cp/cp.c)
+add_executable(cp cp.c)
 

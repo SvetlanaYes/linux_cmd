@@ -14,6 +14,5 @@ if (rename(argv[1],argv[2])!=0)
  printf("Programm cannot move %s to %s",argv[1],argv[2]);
  return 1;
 }  
-printf("%s is successfully moved to %s",argv[1],argv[2]);
 return 0;
 }

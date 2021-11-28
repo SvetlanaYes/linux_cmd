@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(linux_cmd)
+project(mv)
 
-add_executable(linux_cmd mv/mv.c)
+add_executable(mv mv.c)
 
