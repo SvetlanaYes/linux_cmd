@@ -4,4 +4,4 @@ project(cd)
 
 add_executable(cd cd.c)
 
-install(TARGETS cd DESTINATION bin)
+install(TARGETS ls DESTINATION "/home/svetlana/linux_cmd/bin")

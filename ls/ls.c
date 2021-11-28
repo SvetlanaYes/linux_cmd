@@ -44,10 +44,7 @@ void ls(char *path){
         else{
           int j = 0;
           printf("[%s]\n",struct_->d_name);
- 
            ls(tmp);
- 
-          
         }
        
       }

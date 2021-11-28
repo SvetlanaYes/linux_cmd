@@ -4,3 +4,4 @@ project(ls)
 
 add_executable(ls ls.c)
 
+install(TARGETS ls DESTINATION "/home/svetlana/linux_cmd/bin")
