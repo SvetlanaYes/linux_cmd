@@ -6,4 +6,4 @@ add_subdirectory(cp)
 add_subdirectory(rm)
 add_subdirectory(mv)
 add_subdirectory(ls)
-
+add_subdirectory(grep)

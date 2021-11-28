@@ -4,4 +4,4 @@ project(cd)
 
 add_executable(cd cd.c)
 
-install(TARGETS cd DESTINATION bin)
+install(TARGETS cd DESTINATION "${CMAKE_BINARY_DIR}/bin")
