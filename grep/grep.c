@@ -7,14 +7,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pwd.h>
- 
- #ifndef MAX_BUF
-#define MAX_BUF 200
-#endif
 
 
-
-void search_text_in_file(const char* file , char* string)
+void search_text_in_file(const char* file, char* string)
 {
    FILE *fp = fopen(file,"r");
    if (!fp)
@@ -29,7 +24,8 @@ void search_text_in_file(const char* file , char* string)
         if( strstr( line, string) )
            printf( "%s", line);
     }
-    fclose( fp );
+    fclose(fp);
+    free(line);
  }
  
 
@@ -47,7 +43,7 @@ void ls(const char *path , char* string){
       while((struct_ = readdir(directory))!=NULL){
         if(strcmp(struct_->d_name,"..") == 0 ||strcmp(struct_->d_name,".") == 0 )
             continue;
-         char tmp[1024] ;
+         char tmp[1024];
          char *name = struct_->d_name;
          getcwd(tmp,sizeof(tmp));
          char s = '/';
@@ -79,8 +75,8 @@ void ls(const char *path , char* string){
 
 int main(int argc,char*argv[]){
      if (argc != 3 ) {
-       printf("Specify correct arguments!\n");
-       return 1;
+       fprintf(stderr, "Specify correct arguments!\n");
+       exit(-1);
      }
      if(isReg(argv[2]))
      {
@@ -90,7 +86,6 @@ int main(int argc,char*argv[]){
      {
        ls(argv[2],argv[1]);
      }
-
      return 0;
    }
        
