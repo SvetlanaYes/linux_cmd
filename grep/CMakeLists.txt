@@ -4,4 +4,8 @@ project(grep)
 
 add_executable(grep grep.c)
 
-install(TARGETS grep DESTINATION "${CMAKE_BINARY_DIR}/bin")
+set( EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin )
+
+
+
+install(TARGETS grep DESTINATION "${EXECUTABLE_OUTPUT_PATH}")

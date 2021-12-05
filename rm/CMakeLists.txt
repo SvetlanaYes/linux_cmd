@@ -4,4 +4,8 @@ project(rm)
 
 add_executable(rm rm.c)
 
-install(TARGETS rm DESTINATION "${CMAKE_BINARY_DIR}/bin")
+set( EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin )
+
+
+
+install(TARGETS rm DESTINATION "${EXECUTABLE_OUTPUT_PATH}")
