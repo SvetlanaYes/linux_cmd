@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pwd.h>
+#include <limits.h>
 
 
 void search_text_in_file(const char* file, char* string)
@@ -31,19 +32,24 @@ void search_text_in_file(const char* file, char* string)
 
 int isReg(const char* path){
   struct stat S;
-  stat(path,&S);
+  if (stat(path,&S) == -1)
+  {
+    fprintf(stderr, "Specify correct arguments!\n");
+    exit(-1);
+  }
+   
   return S_ISREG(S.st_mode);
 }
 
 
 void ls(const char *path , char* string){
    DIR* directory = opendir(path);
-   if(directory!=NULL){
+   if (directory!=NULL) {
       struct dirent* struct_;
       while((struct_ = readdir(directory))!=NULL){
         if(strcmp(struct_->d_name,"..") == 0 ||strcmp(struct_->d_name,".") == 0 )
             continue;
-         char tmp[1024];
+         char tmp[PATH_MAX];
          char *name = struct_->d_name;
          getcwd(tmp,sizeof(tmp));
          char s = '/';
@@ -65,7 +71,6 @@ void ls(const char *path , char* string){
         else{
           ls(tmp, string); 
         }
-       
       }
    }
    closedir(directory);

@@ -18,6 +18,11 @@ int main(int argc,char **argv) {
     return 0;
  }
  }
+ else 
+ {
+  fprintf(stderr,"0 or more than 2 arguments");
+  exit(1);
+ }
 
   return 0;
 }
