@@ -4,7 +4,7 @@ project(cd)
 
 add_executable(cd cd.c)
 
-set( EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin )
+set( EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin )
 
 
 
