@@ -17,6 +17,10 @@ int main(int argc,char **argv) {
     printf("Cannot change directory to %s\n",argv[1]);
     return 0;
  }
+ else 
+ {
+   printf("OK!\n");
+ }
  }
  else 
  {
